@@ -15,10 +15,10 @@ import Results from "./components/results";
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
-      <BrowserRouter>
+     <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/results" component={Results} />
+            <Route path='/' exact component={Home}/>
+            <Route path='/results' component={Results}/>
         </Switch>
       </BrowserRouter>
     </Provider>,
