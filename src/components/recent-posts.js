@@ -28,4 +28,4 @@ class RecentPosts extends Component {
     }
 }
 
-export default connect(null, actions)(RecentPosts); ``
+export default connect(null, actions)(RecentPosts); 
