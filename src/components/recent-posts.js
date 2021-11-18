@@ -20,7 +20,7 @@ class RecentPosts extends Component {
                 )   
             }
         })
-        return posts
+        return posts;
     }
 
     render() {
