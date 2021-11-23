@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Logo from "./logo";
-import SearchBar from "./search-bar";
+import SearchBar from "./searchBar";
 import RecentPosts from "./recent-posts";
 
 import { connect } from 'react-redux';
@@ -19,7 +19,7 @@ class Home extends Component {
     return (
       <div className="home">
           <Logo />
-          <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
+          <SearchBar page="home" onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
           <RecentPosts />
       </div>
     );
