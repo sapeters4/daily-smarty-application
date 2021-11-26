@@ -49,14 +49,14 @@ class Post extends Component {
                 </div>
             )
         })
-        if(links == 0) {
+        if (links == 0) {
             return <div className="no-content">No Post Links</div>
         }
         return links;
     }
 
     render() {
-        if(this.props.type == 'recent') {
+        if (this.props.type == 'recent') {
             return (
                 <li className="recent-post">
                     <div className="recent-post__title">
@@ -67,7 +67,7 @@ class Post extends Component {
                     </div>
                 </li>
             )
-        } else if(this.props.type == 'result') {
+        } else if (this.props.type == 'result') {
             return (
                 <li className="result-post"
                     onMouseEnter={() => this.setState({ height: 70 })}
